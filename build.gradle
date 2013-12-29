@@ -119,39 +119,6 @@ dependencies {
   compile "org.slf4j:slf4j-api:$slf4jVersion"
   runtime "org.slf4j:jcl-over-slf4j:$slf4jVersion"
   
-  // Apache Commons
-  compile "org.apache.commons:commons-lang3:$apacheCommonsLang3Version"
-  compile "commons-io:commons-io:$apacheCommonsIOVersion"
-  compile "commons-fileupload:commons-fileupload:$apacheCommonsFileuploadVersion"
-  compile "commons-beanutils:commons-beanutils:$apacheCommonsBeanutilsVersion"
-  compile "commons-collections:commons-collections:$apacheCommonsCollectionsVersion"
-  compile "commons-configuration:commons-configuration:$apacheCommonsConfigurationVersion"
-  compile "commons-pool:commons-pool:$apacheCommonsPoolVersion"
-  compile "org.apache.httpcomponents:httpclient:$apacheHttpclientVersion"
-
-  // Thymeleaf
-  compile "org.thymeleaf:thymeleaf:$thymeleafVersion"
-  compile "org.thymeleaf:thymeleaf-spring3:$thymeleafVersion"
-  compile "org.thymeleaf.extras:thymeleaf-extras-springsecurity3:$thymeleafExtrasSpringsecurity3"
-  compile "nz.net.ultraq.web.thymeleaf:thymeleaf-layout-dialect:$thymeleafLayoutDialectVersion"
-  
-  // Tomcat
-  tomcat "org.apache.tomcat.embed:tomcat-embed-core:$tomcatVersion"
-  tomcat "org.apache.tomcat.embed:tomcat-embed-logging-juli:$tomcatVersion"
-  tomcat("org.apache.tomcat.embed:tomcat-embed-jasper:$tomcatVersion") {
-	  exclude group: 'org.eclipse.jdt.core.compiler', module: 'ecj'
-  }
-  
-  // Cargo
-  cargo "org.codehaus.cargo:cargo-core-uberjar:$cargoVersion"
-  cargo "org.codehaus.cargo:cargo-ant:$cargoVersion"
-  
-  // Servlet
-  providedCompile "javax.servlet:javax.servlet-api:$javaxServletApiVersion"
-  providedCompile "javax.websocket:javax.websocket-api:$javaxWebSocketVersion"
-  providedCompile "javax.servlet:jsp-api:$javaxServletJspApiVersion"
-  providedCompile "org.apache.tomcat:tomcat-servlet-api:$tomcatVersion"
-  
   // AspectJ
   compile "org.aspectj:aspectjrt:$aspectjVersion"
   compile "org.aspectj:aspectjweaver:$aspectjVersion"
@@ -174,6 +141,40 @@ dependencies {
   // APIs
   compile "javax.inject:javax.inject:$javaxInjectVersion"
   compile "javax.servlet:javax.servlet-api:$javaxServletApiVersion"
+  
+  
+  // Apache Commons
+  compile "org.apache.commons:commons-lang3:$apacheCommonsLang3Version"
+  compile "commons-io:commons-io:$apacheCommonsIOVersion"
+  compile "commons-fileupload:commons-fileupload:$apacheCommonsFileuploadVersion"
+  compile "commons-beanutils:commons-beanutils:$apacheCommonsBeanutilsVersion"
+  compile "commons-collections:commons-collections:$apacheCommonsCollectionsVersion"
+  compile "commons-configuration:commons-configuration:$apacheCommonsConfigurationVersion"
+  compile "commons-pool:commons-pool:$apacheCommonsPoolVersion"
+  compile "org.apache.httpcomponents:httpclient:$apacheHttpclientVersion"
+
+  // Thymeleaf
+  compile "org.thymeleaf:thymeleaf:$thymeleafVersion"
+  compile "org.thymeleaf:thymeleaf-spring3:$thymeleafVersion"
+  compile "org.thymeleaf.extras:thymeleaf-extras-springsecurity3:$thymeleafExtrasSpringsecurity3"
+  compile "nz.net.ultraq.web.thymeleaf:thymeleaf-layout-dialect:$thymeleafLayoutDialectVersion"
+  
+  // Servlet
+  providedCompile "javax.servlet:javax.servlet-api:$javaxServletApiVersion"
+  providedCompile "javax.websocket:javax.websocket-api:$javaxWebSocketVersion"
+  providedCompile "javax.servlet:jsp-api:$javaxServletJspApiVersion"
+  providedCompile "org.apache.tomcat:tomcat-servlet-api:$tomcatVersion"
+  
+  // Cargo
+  cargo "org.codehaus.cargo:cargo-core-uberjar:$cargoVersion"
+  cargo "org.codehaus.cargo:cargo-ant:$cargoVersion"
+  
+  // Tomcat
+  tomcat "org.apache.tomcat.embed:tomcat-embed-core:$tomcatVersion"
+  tomcat "org.apache.tomcat.embed:tomcat-embed-logging-juli:$tomcatVersion"
+  tomcat("org.apache.tomcat.embed:tomcat-embed-jasper:$tomcatVersion") {
+	  exclude group: 'org.eclipse.jdt.core.compiler', module: 'ecj'
+  }
   
   // Testing
   testCompile "junit:junit:$junitVersion"
