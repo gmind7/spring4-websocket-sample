@@ -70,7 +70,7 @@ repositories {
   maven { url "http://repo.spring.io/libs-release" }
   maven { url "http://repo.spring.io/libs-milestone" }
   maven { url "http://repo.spring.io/libs-snapshot" }
-  maven { url "https://raw.github.com/gmind7/gmind7.maven.repository/master/releases" }
+  maven { url "https://raw.github.com/gmind7/gmind7.maven.repository/master/lib-releases" }
 }
 
 javadoc {
@@ -95,9 +95,9 @@ artifacts {
 
 dependencies {
   // Gmind7
-  compile("com.gmind7.bakery:spring-application-config:$bakeryVersion") { force = true }
-  compile("com.gmind7.bakery:spring-web-mvc-config:$bakeryVersion") { force = true }
-  compile("com.gmind7.bakery:spring-web-support:$bakeryVersion") { force = true }
+  compile("com.gmind7.bakery:spring-application-config:$bakerySpringApplicationVersion") { force = true }
+  compile("com.gmind7.bakery:spring-web-mvc-config:$bakerySpringWebMvcVersion") { force = true }
+  compile("com.gmind7.bakery:spring-web-support:$bakerySpringWebSupportVersion") { force = true }
 		
   // Spring
   compile("org.springframework:spring-core:$springVersion") { force = true }
