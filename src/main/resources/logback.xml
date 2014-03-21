@@ -6,8 +6,8 @@
         </layout>
 	</appender>
 	<logger name="com.gmind7" level="DEBUG" />
-	<logger name="org.springframework" level="WARN" />
-	<logger name="org.thymeleaf" level="WARN" />
+	<logger name="org.springframework" level="INFO" />
+	<logger name="org.thymeleaf" level="INFO" />
 	<root level="info">
         <appender-ref ref="CONSOLE" />
 	</root>
