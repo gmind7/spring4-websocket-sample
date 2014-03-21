@@ -17,6 +17,7 @@ public class WebSocketController {
 		return "index";
 	}
 	
+	/* mvc:view path => javaconfig 사용 설정은 샘플링 이라서 하지 않았습니다. */
 	@RequestMapping(value = "/echo/view", method = RequestMethod.GET)
 	public String echo(){
 		return "echo";
