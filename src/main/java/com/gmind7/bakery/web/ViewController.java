@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-public class WebSocketController {
+public class ViewController {
 	
-	protected Logger log = LoggerFactory.getLogger(WebSocketController.class);
+	protected Logger log = LoggerFactory.getLogger(ViewController.class);
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(){
